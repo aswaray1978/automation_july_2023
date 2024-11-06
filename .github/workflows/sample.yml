@@ -34,4 +34,9 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+  run_command:
+        runs-on: ubuntu-latest
+        steps:
+          - name: run a command
+            run: echo "Hello World!"
   
