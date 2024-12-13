@@ -21,12 +21,10 @@ jobs:
               run: "packer init image-builder"
 
             - name: format & validate packer
-              run:  |
-                   "packer fmt image-builder" 
-                   "packer validate image-builder"
+              run: "packer validate ./image-builder/"
 
             - name: build packer image
-              run: "packer build image-builder"
+              run: "packer build ./image-builder/"
 
         
 
