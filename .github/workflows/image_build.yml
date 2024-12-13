@@ -7,7 +7,8 @@ jobs:
     build-image:  #  <---- Name of job
         runs-on: ubuntu-latest  #Github hosted runner
 
-
+        env:
+            PKR_VAR_region: us-east-1
         steps:
             - name: checkout  #Step 1 Checkout code. Use a dash - for list in yaml
               uses: actions/checkout@v3
