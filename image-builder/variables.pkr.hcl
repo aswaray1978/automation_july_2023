@@ -7,7 +7,7 @@ variable app_name{
 variable source_ami{
      description = "AMI ID of source image"
      type = string
-     default = " ami-06b21ccaeff8cd686"
+     default = "ami-0453ec754f44f9a4a"
 }
 
 variable instance_type{
