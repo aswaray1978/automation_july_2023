@@ -1,6 +1,11 @@
 on:
-    workflow_dispatch:  # To enable a workflow to be triggered manually, 
-                        # configure the workflow_dispatch event.
+   push:
+     branches:
+      - 'main'
+     paths:
+      - 'image-builder'
+
+    workflow_dispatch:
 
 #Define Jobs
 jobs:
