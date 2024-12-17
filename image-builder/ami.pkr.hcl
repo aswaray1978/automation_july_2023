@@ -26,7 +26,7 @@ build {
       "sudo yum install httpd -y",
       "sudo systemctl enable httpd",
       "sudo systemctl start httpd",
-      "sudo echo '<h1>Welcome to terraform course at LWPLabs</h1>'|sudo tee /var/www/html/index.html"
+      "sudo echo '<h1>Welcome to Automation course at LWPLabs pvt ltd</h1>'|sudo tee /var/www/html/index.html"
     ]
   }
 }
