@@ -1,5 +1,5 @@
 locals{
-   image_name = "${var.app_name}-lwplabs-packer"
+   image_name = "${var.app_name}-lwp-packer"
 
 }
 
