@@ -8,26 +8,26 @@ jobs:
     provision-three-tier:
         runs-on: ubuntu-latest
 
-    steps:
-        - name: checkout
-          uses: actions/checkout@v3  #checkout is Github plugin
-
-        - name:  setup terraform  #provide Terraform binanries - install terraform
-          uses: hashicorp/setup-terraform@v3
-
-        - name: terraform initialize
-          run: terraform init
-
-        - name: terraform format and validate
-          run: |
-            terraform fmt
-            terraform validate
-
-        - name: terraform plan
-          run: terraform plan -input=false
-
-        - name: terraform apply 
-          run: terraform apply --auto-approve
-
-          
+        steps:
+            - name: checkout
+              uses: actions/checkout@v3  #checkout is Github plugin
+    
+            - name:  setup terraform  #provide Terraform binanries - install terraform
+              uses: hashicorp/setup-terraform@v3
+    
+            - name: terraform initialize
+              run: terraform init
+    
+            - name: terraform format and validate
+              run: |
+                terraform fmt
+                terraform validate
+    
+            - name: terraform plan
+              run: terraform plan -input=false
+    
+            - name: terraform apply 
+              run: terraform apply --auto-approve
+    
+              
 
