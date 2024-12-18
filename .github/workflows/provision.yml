@@ -1,4 +1,4 @@
-name: provosion three tier architecture using terraform
+name: provision three tier architecture using terraform
 
 on: 
 
@@ -29,5 +29,5 @@ jobs:
         - name: terraform apply 
           run: terraform apply --auto-approve
 
-          
+
 
