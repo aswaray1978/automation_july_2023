@@ -7,7 +7,12 @@ on:
 jobs:
     provision-three-tier:
         runs-on: ubuntu-latest
+        env:
+            PKR_VAR_region: us-east-1
+            AWS_ACCESS_KEY_ID:  ${{ secrets.aws_access_key }} #Ginger Templating
+            AWS_SECRET_ACCESS_KEY:  ${{ secrets.aws_secret_key }}
 
+<<<<<<< HEAD
     steps:
         - name: checkout
           uses: actions/checkout@v3  #checkout is Github plugin
@@ -30,4 +35,28 @@ jobs:
           run: terraform apply --auto-approve
 
 
+=======
+        steps:
+            - name: checkout
+              uses: actions/checkout@v3  #checkout is Github plugin
+    
+            - name:  setup terraform  #provide Terraform binanries - install terraform
+              uses: hashicorp/setup-terraform@v3
+    
+            - name: terraform initialize
+              run: terraform init
+    
+            - name: terraform format and validate
+              run: |
+                terraform fmt
+                terraform validate
+    
+            - name: terraform plan
+              run: terraform plan -input=false
+    
+            - name: terraform apply 
+              run: terraform apply --auto-approve
+    
+              
+>>>>>>> b6d6d4cbe21c8879d49201ab5c763aa2dd802ed9
 
