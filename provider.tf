@@ -23,7 +23,6 @@ terraform {
       session_name = "test1"
     }
     
-   
   }
 }
 
