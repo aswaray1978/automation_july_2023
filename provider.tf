@@ -18,6 +18,7 @@ terraform {
     #Role should have permission to access S3
     assume_role = {
       role_arn       = "arn:aws:iam::503561419742:role/B60devops-sts-assume-role"
+      session_name = "test1"
     }
     
     profile        = "b60devops"
