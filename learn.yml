@@ -1,0 +1,44 @@
+#Define key: value pair
+name: Rahul
+age: 28
+company: "lwp labs pvt ltd"
+is_working: true
+
+
+#Map/dictionary (Nested key-value pairs)
+#Example 1
+address:
+  h.no: 101
+  street: james st
+  city:
+   road: oracle drive
+   apartment: Lord Baron Apts
+  zip_code: 12345
+
+#Example 2 (Here you don't have to worry about indentation)
+company_address: {plot_no: 1, street: bassment, city: lexington}
+
+#List/Array _ Need to use dash "-" 
+# Ex 1: Define IT skills
+
+skills: 
+  - terraform
+  - kubernetes:
+      skills: CKA
+      skill2: CKAD
+  - aws
+  - softskills1: teamplayer
+    softskills2: hardworking
+
+# Ex 2:List using brackets 
+previous_employers: ["Teralast", "Everlast"]
+
+
+#Ex 3 Multi-line --> Use pipe " |"
+
+feedback_from_manager: |
+  Rahul is great asset to the company
+  He has worked towards automation
+
+
+

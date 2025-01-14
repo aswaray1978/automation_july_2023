@@ -1,0 +1,45 @@
+name: build packer image
+
+on:
+    push:
+      branches:
+        - main
+      paths:
+        - image-builder/*
+
+  
+#Define Jobs
+jobs:
+    build-image:  #  <---- Name of job
+        runs-on: ubuntu-latest  #Github hosted runner
+
+        env:
+            PKR_VAR_region: us-east-1
+            AWS_ACCESS_KEY_ID:  ${{ secrets.aws_access_key }} #Ginger Templating
+            AWS_SECRET_ACCESS_KEY:  ${{ secrets.aws_secret_key }}
+        
+        
+        steps:
+            - name: checkout  #Step 1 Checkout code. Use a dash - for list in yaml
+              uses: actions/checkout@v3
+
+            - name: setup packer #Step 2 Install packer on Github Runner
+              id: setup
+              uses: hashicorp/setup-packer@main
+
+            - name: initialize packer  #Step 3 Initialize packer on Github Runner
+              run: "packer init image-builder"
+
+            - name: format & validate packer
+              run: "packer validate ./image-builder/"
+
+            - name: build packer image
+              run: "packer build ./image-builder/"
+
+        
+
+
+
+        
+         
+         
