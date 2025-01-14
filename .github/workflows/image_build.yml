@@ -17,7 +17,7 @@ jobs:
 
         env:
             PKR_VAR_region: us-east-1
-            AWS_ACCESS_KEY_ID:  ${{ secrets.aws_access_key }} #Ginger Templating
+            AWS_ACCESS_KEY_ID:  ${{ secrets.aws_access_key }} #Ginger Templating -
             AWS_SECRET_ACCESS_KEY:  ${{ secrets.aws_secret_key }}
         
         
