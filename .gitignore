@@ -52,3 +52,6 @@ Thumbs.db
 *.txt
 
 # ! --> exclamation means do not ignore network logs i.e !Logs/networking.log
+
+#VScode files
+.vscode

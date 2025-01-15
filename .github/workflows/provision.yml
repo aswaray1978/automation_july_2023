@@ -28,10 +28,10 @@ jobs:
                 terraform validate
     
             - name: terraform plan #(terraform plan command)it will keep on executing to disable loop, we add '-input=false'
-              run: terraform plan -input=false  
+              run: terraform plan -input=false -lock=false 
     
             - name: terraform apply 
-              run: terraform apply --auto-approve
+              run: terraform apply --auto-approve -lock=false
     
               
 
