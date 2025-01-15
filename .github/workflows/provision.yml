@@ -27,8 +27,8 @@ jobs:
                 terraform fmt
                 terraform validate
     
-            - name: terraform plan
-              run: terraform plan -input=false
+            - name: terraform plan #(terraform plan command)it will keep on executing to disable loop, we add '-input=false'
+              run: terraform plan -input=false  
     
             - name: terraform apply 
               run: terraform apply --auto-approve
