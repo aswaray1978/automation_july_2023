@@ -29,8 +29,8 @@ data "aws_ami" "this" {
 }
 
 #If you want to see result on screen - output block
-output "image_name" {
-  value = data.aws_ami.this.image_id
-}
+# output "image_name" {
+#   value = data.aws_ami.this.image_id
+# }
 
 
