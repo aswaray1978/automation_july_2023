@@ -94,7 +94,7 @@ variable "inbound_rule_app" {
 }
 
 
-variable "db_username" {
+variable "db_user_name" {
   description = "Database administrator username"
   type        = string
   default  = "admin"
