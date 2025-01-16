@@ -29,7 +29,7 @@ terraform {
 
 provider "aws" {
   region = "us-east-1"
-  profile = "b60devops"
+  #profile = "b60devops"
   assume_role {
     role_arn     = "arn:aws:iam::503561419742:role/B60devops-sts-assume-role"
     session_name = "test1"
