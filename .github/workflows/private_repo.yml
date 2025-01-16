@@ -1,4 +1,4 @@
-name:checkout private repo
+name: checkout private repo
 on:
   workflow_dispatch:
 
