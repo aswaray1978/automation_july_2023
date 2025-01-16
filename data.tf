@@ -14,7 +14,7 @@ data "aws_ami" "this" {
 
   filter {
     name   = "name"
-    values = ["*-lwp-packer"]   #old "*-lwplabs-packer"
+    values = ["*-lwplabs-packer"]   #old "*-lwplabs-packer"
   }
 
   filter {
