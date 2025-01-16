@@ -1,3 +1,4 @@
+name:checkout private repo
 on:
   workflow_dispatch:
 
