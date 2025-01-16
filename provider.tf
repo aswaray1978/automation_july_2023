@@ -36,8 +36,3 @@ provider "aws" {
   }
 }
 
-
-
-assume_role = {
-      role_arn = "arn:aws:iam::503561419742:role/B60devops-sts-assume-role"
-    }
