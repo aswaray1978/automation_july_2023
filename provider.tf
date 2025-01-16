@@ -21,7 +21,7 @@ terraform {
     assume_role = {
       role_arn = "arn:aws:iam::503561419742:role/B60devops-sts-assume-role"
     }
-    profile        = "b60devops"
+    #profile        = "b60devops"
     dynamodb_table = "terraform_state_lock"
   }
 }
