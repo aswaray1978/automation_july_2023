@@ -10,3 +10,4 @@ jobs:
           uses: actions/checkout@v3
           with: 
             repository: Gauravlwplabs/terraform_multibranch
+            token: ${{ secrets.my_pat__token }}
