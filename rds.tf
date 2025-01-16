@@ -1,6 +1,6 @@
 resource "aws_db_instance" "this" {
   allocated_storage      = 10
-  db_name                = "three_tier_db_${local.vpc_name}"
+  db_name                = "threetierdb"
   engine                 = "mysql"
   engine_version         = "8.0.33"
   instance_class         = "db.t3.micro"
