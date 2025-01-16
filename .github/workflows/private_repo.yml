@@ -1,0 +1,12 @@
+on:
+  workflow_dispatch:
+
+jobs:
+  checks:
+      name: checkout private repo
+      runs-on: ubuntu-latest
+      steps:
+        - name: checkout
+          uses: actions/checkout@v3
+          with: 
+            repository: Gauravlwplabs/terraform_multibranch
