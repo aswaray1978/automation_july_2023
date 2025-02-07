@@ -132,6 +132,11 @@ module "autoscaling" {
   tags = {
     Environment = "dev"
   }
+
+  depends_on = [ 
+    aws_key_pair.this.key_name 
+  ]
+
 }
 
 
