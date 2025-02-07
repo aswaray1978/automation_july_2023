@@ -134,7 +134,7 @@ module "autoscaling" {
   }
 
   depends_on = [ 
-    aws_key_pair.this.key_name 
+    aws_key_pair.this.my-aws-key
   ]
 
 }
