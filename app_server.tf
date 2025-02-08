@@ -133,9 +133,9 @@ module "autoscaling" {
     Environment = "dev"
   }
 
-  depends_on = [ 
-    aws_key_pair.this.my-aws-key
-  ]
+  # depends_on = [ 
+  #   aws_key_pair.this
+  # ]
 
 }
 
